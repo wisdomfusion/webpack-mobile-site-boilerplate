@@ -1,0 +1,107 @@
+@import "Src/variables";
+@import "~bootstrap/scss/bootstrap";
+
+#MODULE-home {
+
+  .main-container {
+    padding-top: 64px;
+
+    @include media-breakpoint-up(sm) {
+    }
+    @include media-breakpoint-up(md) {
+    }
+    @include media-breakpoint-up(lg) {
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 16px;
+    }
+  }
+
+  .categories {
+    height: 30px;
+    line-height: 30px;
+    margin: 0 -16px;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+      margin: 0;
+    }
+
+    .cate-title {
+      float: left;
+      line-height: 30px;
+    }
+
+    .cates {
+      float: none;
+      margin: 0;
+      width: 100%;
+      white-space: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
+
+      @include media-breakpoint-up(sm) {
+        float: left;
+      }
+
+      @include media-breakpoint-up(md) {
+        width: auto;
+      }
+
+      li {
+        display: inline-block;
+        background-color: white;
+        border-radius: 5px;
+        margin-left: 10px;
+
+        a {
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 16px;
+          color: $gray-600;
+          text-decoration: none;
+        }
+
+        &.active {
+          background-color: $orange-light;
+
+          a {
+            color: $orange;
+          }
+        }
+
+        &:last-child {
+          margin-right: 16px;
+        }
+
+        @include media-breakpoint-up(md) {
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+
+      }
+    }
+  }
+
+  .course-list {
+
+
+  }
+
+  // mobile first
+
+  @include media-breakpoint-up(sm) {
+  }
+
+  @include media-breakpoint-up(md) {
+  }
+
+  @include media-breakpoint-up(lg) {
+  }
+
+  @include media-breakpoint-up(xl) {
+  }
+
+}

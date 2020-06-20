@@ -1,0 +1,11 @@
+@import "variables";
+
+body {
+  font-size: 20px;
+}
+
+.border-1px {
+    border: 1px solid transparent;
+    border-image: svg(1px-border param(--color #00b1ff)) 2 2 stretch;
+}
+
